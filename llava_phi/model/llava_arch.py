@@ -20,7 +20,7 @@ import torch
 from .multimodal_encoder.clip_encoder import CLIPVisionTower
 from .multimodal_projector.builder import build_vision_projector
 from .language_model.configuration_llava_phi import LlavaPhiConfig, LlavaPhiVisionConfig, ProjectorConfig
-from llava_phi.constants import IGNORE_INDEX, IMAGE_TOKEN_INDEX, DEFAULT_IMAGE_PATCH_TOKEN, DEFAULT_IM_START_TOKEN, DEFAULT_IM_END_TOKEN
+from src.LLaVA_phi.llava_phi.constants import IGNORE_INDEX, IMAGE_TOKEN_INDEX, DEFAULT_IMAGE_PATCH_TOKEN, DEFAULT_IM_START_TOKEN, DEFAULT_IM_END_TOKEN
 
 
 class LlavaMetaModel:

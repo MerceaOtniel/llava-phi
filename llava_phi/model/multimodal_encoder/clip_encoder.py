@@ -5,7 +5,7 @@ import torch.nn as nn
 
 from transformers import CLIPPreTrainedModel, CLIPVisionConfig
 from transformers.models.clip.modeling_clip import CLIPVisionTransformer
-from llava_phi.model.language_model.configuration_llava_phi import LlavaPhiVisionConfig
+from src.LLaVA_phi.llava_phi.model.language_model.configuration_llava_phi import LlavaPhiVisionConfig
 
 
 class CLIPVisionTower(CLIPPreTrainedModel):

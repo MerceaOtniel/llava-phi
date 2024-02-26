@@ -4,11 +4,11 @@ import shutil
 
 from transformers import AutoTokenizer, AutoModelForCausalLM, AutoConfig, BitsAndBytesConfig, CLIPImageProcessor
 import torch
-from llava_phi.model import *
-from llava_phi.constants import DEFAULT_IMAGE_PATCH_TOKEN, DEFAULT_IM_START_TOKEN, DEFAULT_IM_END_TOKEN
+from src.LLaVA_phi.llava_phi.model import *
+from src.LLaVA_phi.llava_phi.constants import DEFAULT_IMAGE_PATCH_TOKEN, DEFAULT_IM_START_TOKEN, DEFAULT_IM_END_TOKEN
 
 
-def load_pretrained_model(model_path, model_base, model_name, load_8bit=False, load_4bit=False, device_map="cuda", device="cuda"):
+def load_pretrained_model(model_path, model_base, model_name, load_8bit=False, load_4bit=False, device_map="cuda", device="cuda", **kwargs):
     kwargs = {"device_map": device_map}
     if load_8bit:
         kwargs['load_in_8bit'] = True
