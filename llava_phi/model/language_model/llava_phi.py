@@ -9,9 +9,9 @@ from transformers import AutoConfig, AutoModelForCausalLM, \
     PhiModel, PhiPreTrainedModel
 
 from transformers.modeling_outputs import CausalLMOutputWithPast
-from ..llava_arch import LlavaMetaModel, LlavaMetaForCausalLM
+from src.LLaVA_phi.llava_phi.model.llava_arch import LlavaMetaModel, LlavaMetaForCausalLM
 from transformers.utils import logging
-from .configuration_llava_phi import LlavaPhiConfig
+from src.LLaVA_phi.llava_phi.model.language_model.configuration_llava_phi import LlavaPhiConfig
 
 logger = logging.get_logger(__name__)
 
